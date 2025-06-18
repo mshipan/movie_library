@@ -48,9 +48,9 @@ const Footer: FC = () => {
       className="bg-cover bg-center bg-no-repeat pt-16 pb-6 px-6 md:px-14"
     >
       {/* Main content */}
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 border-b border-gray-700 pb-10">
+      <div className="grid grid-cols-2 md:flex md:flex-row md:justify-between md:items-start gap-10 border-b border-gray-700 pb-10">
         {/* Left Section */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 col-span-2">
           <img src={logo} alt="logo" className="w-44" />
           <p className="text-white text-base leading-relaxed max-w-md">
             Stay connected with us and lets know more stories about new movies

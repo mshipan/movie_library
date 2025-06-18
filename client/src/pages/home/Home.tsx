@@ -1,7 +1,10 @@
-const Home = () => {
+import type { FC } from "react";
+import Banner from "@/components/pages/home/Banner";
+
+const Home: FC = () => {
   return (
-    <div>
-      <h2>Welcome to the Movie Library</h2>
+    <div className="px-6 md:px-14">
+      <Banner />
     </div>
   );
 };
