@@ -2,8 +2,8 @@ import type { FC } from "react";
 import bgImg from "@/assets/bg.png";
 import img1 from "@/assets/img-1.png";
 import img2 from "@/assets/img-2.png";
-import { IoPlayOutline } from "react-icons/io5";
 import { GoInfo } from "react-icons/go";
+import PlayButton from "@/components/shared/PlayButton";
 
 const Banner: FC = () => {
   const bannerData = [
@@ -89,9 +89,7 @@ const Banner: FC = () => {
                 )}
 
                 <div className="flex flex-wrap items-center gap-3">
-                  <button className="px-5 py-2 text-lg lg:text-2xl text-black font-medium rounded-md bg-[#58dda3] cursor-pointer transition-all duration-300 shadow-md hover:shadow-[0_0_20px_5px_#58dda3] flex items-center gap-2">
-                    <IoPlayOutline className="text-xl lg:text-3xl" /> Play
-                  </button>
+                  <PlayButton />
 
                   <button className="px-5 py-2 text-base lg:text-xl text-white font-medium rounded-md bg-transparent hover:bg-white/30 cursor-pointer transition-all duration-300 flex items-center gap-2">
                     <GoInfo className="text-xl lg:text-2xl" /> More info
@@ -144,9 +142,7 @@ const Banner: FC = () => {
               )}
 
               <div className="lg:mt-4">
-                <button className="px-5 py-2 text-lg lg:text-2xl text-black font-medium rounded-md bg-[#58dda3] cursor-pointer transition-all duration-300 shadow-md hover:shadow-[0_0_20px_5px_#58dda3] flex items-center gap-2">
-                  <IoPlayOutline className="text-xl lg:text-3xl" /> Play
-                </button>
+                <PlayButton />
               </div>
             </div>
           </div>

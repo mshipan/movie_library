@@ -1,4 +1,4 @@
-import { Play } from "lucide-react";
+import StreamNowButton from "@/components/shared/StreamNowButton";
 import { Link } from "react-router";
 
 const TrendingShowsCard = ({ show, index }) => {
@@ -15,9 +15,7 @@ const TrendingShowsCard = ({ show, index }) => {
           to="/"
           className="absolute bottom-6 left-6 transform transition-all duration-500 ease-in-out translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
         >
-          <button className="flex items-center gap-1 text-2xl px-4 py-2 rounded-xl transition-all duration-300 text-white hover:text-[#58dda3] bg-white/30 cursor-pointer backdrop-blur">
-            Stream Now <Play />
-          </button>
+          <StreamNowButton />
         </Link>
       </div>
 
